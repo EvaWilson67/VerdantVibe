@@ -1,10 +1,10 @@
 import './App.css';
+import Tree from './components/tree';
 
 function App() {
   return (
     <>
-    <h1>Hello World</h1>
-    <h2>ujhfsjsfdj</h2>
+    <Tree />
     </>
   );
 }
