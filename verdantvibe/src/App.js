@@ -4,7 +4,10 @@ import Tree from './components/tree';
 function App() {
   return (
     <>
-    <Tree />
+    <section className="columns">
+      <Tree />
+      <Tree />
+    </section>
     </>
   );
 }
