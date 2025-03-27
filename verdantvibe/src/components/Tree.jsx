@@ -1,10 +1,11 @@
 import "./css/Tree.css"
 
-function Tree() {
+function Tree(props) {
     return(
         <section className="tree">
-            <h3>Tree Name</h3>
-            <p>Tree description</p>
+            <h3>{props.name}</h3>
+            <p>{props.description}</p>
+            <img src={props.image} />
         </section>
     );
 
