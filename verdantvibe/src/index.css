@@ -1,9 +1,170 @@
-.img{
-  width:100%;
+:root {
+  --main-background-color: white;
+  --secondary-background-color: #dfe0dc;
+
+  --header-footer-background-color: #283106;
+  --header-footer-color: white;
+
+  --container-background-color: #b0b6bc;
+  --container-border-color: #777e5c;
+
+  --navigation-link-hover: #d1d8bd;
+  /* 
+#DFE0DC
+#D1D8BD
+#777E5C
+#C7C2AB
+#B0B6BC
+#283106
+*/
 }
 
-@media screen and (min-width: 768px) {
-  .columns {
-    display:flex;
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  margin: 0px;
+}
+
+.page-content {
+  margin: auto;
+  background-color: var(--main-background-color);
+  padding: 5px;
+}
+
+.page-background {
+  padding-top: 1px;
+  background-color: var(--secondary-background-color);
+}
+
+/* Typography */
+#main-nav,
+.unit,
+.house-plants,
+#submission-response,
+.node,
+.blog,
+.plant-fragments h2,
+.plant-fragments h3,
+#nav-items,
+#most-recent-pictures h3,
+.footer-content h2,
+.page-content h1 {
+  text-align: center;
+}
+.page-content h1,
+.page-content h2,
+.page-content h3,
+.page-content p {
+  text-align: center;
+  color: var(--header-footer-background-color);
+}
+
+
+/* Helper Tools*/
+.height-center {
+  margin-top: auto;
+  margin-bottom: auto;
+  img {
+    width: 100px;
+    height: auto;
   }
+}
+
+.right {
+  padding-right: 10px;
+}
+
+.left {
+  padding-left: 10px;
+}
+
+.center {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.margin {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.small-130x-top {
+  margin-bottom: auto;
+}
+
+.hide {
+  display: none !important;
+}
+
+
+
+.float-right{
+  float:right;
+}
+
+/* Small Screens*/
+@media only screen and (max-width: 999px) {
+  .hide-for-small {
+    display: none !important;
+  }
+  .hide-for-large {
+    display: block !important;
+  }
+
+  .columns-small {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .gallery-small {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .page-background-small {
+    background-color: var(--main-background-color);
+  }
+
+
+}
+
+/* Larger screens */
+@media only screen and (min-width: 1000px) {
+  .hide-for-small {
+    display: block !important;
+  }
+
+  .hide-for-large {
+    display: none !important;
+  }
+
+  #main-nav {
+    display: flex;
+  }
+
+  .columns {
+    display: flex;
+  }
+
+  .gallery {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .one {
+    flex: 1;
+  }
+  .two {
+    flex: 2;
+  }
+  .three {
+    flex: 3;
+  }
+
+  .page-content {
+    width: 85%;
+    max-width: 1000px;
+  }
+
 }
