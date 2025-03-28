@@ -1,0 +1,33 @@
+
+
+
+  /* Small Screens*/
+@media only screen and (max-width: 999px) {
+    .care-box {
+        img {
+          max-width: 90%;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
+
+      .care-box img {
+        padding: 10px;
+      }
+
+      #care-instructions h2 {
+        text-align: center;
+      }
+    
+      .care-box {
+        text-align: center;
+      }
+    
+}
+
+
+/* Larger screens */
+@media only screen and (min-width: 1000px) {
+
+}

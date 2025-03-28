@@ -1,0 +1,8 @@
+.care-box {
+    background: var(--main-background-color);
+    border: 10px solid var(--container-background-color);
+    margin: 10px;
+    img{
+      border:5px solid var(--container-background-color);
+    }
+  }

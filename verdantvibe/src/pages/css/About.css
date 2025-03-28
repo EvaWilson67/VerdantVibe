@@ -1,0 +1,30 @@
+#contact-section,
+#about-section {
+  background: var(--secondary-background-color);
+  margin: 50px;
+  padding: 100px;
+  padding: 20px;
+  min-height: 130px;
+}
+#contact-section{
+  min-height: 490px;
+
+}
+
+textarea {
+  width: 100%;
+  height: 200px;
+}
+
+txt-information input {
+  width: 100%;
+}
+
+.contact-text-box {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    color: var(--header-footer-background-color);
+  }
+  

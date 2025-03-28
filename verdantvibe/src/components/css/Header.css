@@ -1,5 +1,12 @@
-Header{
+/* Header{
     background:lightpink;
     text-align: center;
     padding: 10px;
+} */
+
+Header {
+  background-color: var(--header-footer-background-color);
+  margin: 0px;
+  text-align: center;
+  padding: 10px;
 }
