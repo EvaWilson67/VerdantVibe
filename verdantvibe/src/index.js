@@ -10,17 +10,16 @@ import Nopage from './pages/Nopage';
 
 function App() {
   return(
-    <h1>FUCK</h1>
-    // <BrowserRouter basename={process.env.PUBLIC_URL}>
-    //   <Routes>
-    //     <Route path="/" element={<Layout />}>
-    //       <Route index element={<Home />} />
-    //       <Route path="about" element={<About />} />
-    //       <Route path="blog" element={<Blog />} />
-    //       <Route path="*" element={<Nopage/>} />
-    //     </Route>
-    //   </Routes>
-    // </BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="about" element={<About />} />
+          <Route path="blog" element={<Blog />} />
+          <Route path="*" element={<Nopage/>} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 };
 
