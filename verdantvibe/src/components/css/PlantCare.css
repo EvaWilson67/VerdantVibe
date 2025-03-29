@@ -6,3 +6,9 @@
       border:5px solid var(--container-background-color);
     }
   }
+
+  @media only screen and (min-width: 1000px) {
+    .idea-img {
+      margin: 20px;
+    }
+  }
