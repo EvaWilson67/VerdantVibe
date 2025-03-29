@@ -1,5 +1,7 @@
 import "./css/PlantCare.css";
 
+
+
 function PlantCare(props) {
   return (
     <section className="plantCare columns care-box ">

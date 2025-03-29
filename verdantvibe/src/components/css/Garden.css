@@ -1,0 +1,29 @@
+.node {
+    margin: 10px;
+    background-color: var(--secondary-background-color);
+    border: 10px solid var(--container-border-color);
+    img {
+      margin: 5px;
+      width: 200px;
+      border: 5px solid var(--container-border-color);
+    }
+    padding: 10px;
+  }
+
+  .title-container {
+    position: relative;
+    top: -50px;
+    margin-bottom: -50px;
+  }
+  
+
+  .hidden-title h4 {
+    visibility: hidden;
+  }
+  
+  .unhidden-title h4 {
+    visibility: visible;
+    background-color: var(--main-background-color);
+    border: 1px solid var(--border-color);
+  }
+  

@@ -12,8 +12,6 @@ import Care from './pages/Care';
 import Resources from './pages/Resources';
 import Gardening from './pages/Gardening';
 
-
-
 import Nopage from './pages/Nopage';
 
 function App() {
@@ -28,6 +26,9 @@ function App() {
           <Route path="care" element={<Care />} />
           <Route path="resources" element={<Resources />} />
           <Route path="gardening" element={<Gardening />} />
+
+
+        
 
           <Route path="*" element={<Nopage/>} />
         </Route>

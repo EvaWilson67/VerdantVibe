@@ -1,0 +1,32 @@
+.segment {
+    margin: 10px;
+    background-color: var(--main-background-color);
+    border: 2px solid var(--container-border-color);
+    img {
+      padding: 10px;
+    }
+  }
+  
+
+/* Small Screens*/
+@media only screen and (max-width: 999px) {
+    .segment {
+        flex-wrap: wrap;
+        img {
+          align-items: center;
+          justify-content: center;
+        }
+      }
+}
+
+/* Larger screens */
+@media only screen and (min-width: 1000px) {
+    .segment {
+        min-height: 300px;
+        min-width: 300px;
+      }
+    
+      .segment p {
+        padding: 5px;
+      }
+}

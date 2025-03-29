@@ -36,6 +36,16 @@ body {
   background-color: var(--secondary-background-color);
 }
 
+.links ul {
+  padding-left: 0px;
+}
+
+.links {
+  text-decoration: none;
+  list-style-type: none;
+  color: black;
+}
+
 /* Typography */
 #main-nav,
 .unit,
@@ -97,10 +107,15 @@ body {
   display: none !important;
 }
 
-
-
 .float-right{
   float:right;
+}
+
+.back-button {
+  width: 150px;
+  height: 50px;
+  padding: 20px;
+  float: right;
 }
 
 /* Small Screens*/

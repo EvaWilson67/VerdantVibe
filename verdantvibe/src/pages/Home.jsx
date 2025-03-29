@@ -1,5 +1,6 @@
 import "./css/Home.css";
-// import Tree from "../components/Tree";
+import { Outlet, Link } from "react-router-dom";
+
 
 function Home() {
   return (
@@ -12,15 +13,20 @@ function Home() {
           <section id="non-recent-pictures" className="right columns margin">
             <div className="columns two sector center">
               <section className="container margin center">
-                <a href="#" className="links">
+
+                <Link to="/blog" className="links">
                   <div className="margin">
+
                     <img
-                      src="/images/blog_images/personalplantsprt1.jpg"
+                      src={
+                        process.env.PUBLIC_URL +
+                        "/images/blog_images/personalplantsprt1.jpg"
+                      }
                       className="blog-image large-image"
                       alt="Personal Plants"
                     />
                   </div>
-                </a>
+                </Link>
 
                 <div className="blog-text margin center">
                   <p>
@@ -35,7 +41,9 @@ function Home() {
 
               <div className="right-image small-130x-top">
                 <img
-                  src="/images/blog_images/forestguy.jpg"
+                  src={
+                    process.env.PUBLIC_URL + "/images/blog_images/forestguy.jpg"
+                  }
                   className="hide-for-small blog-image small-image"
                   alt="Forest Guy"
                 />
@@ -45,53 +53,60 @@ function Home() {
             <div className="columns two sector">
               <div className="right small-130x hide-for-small">
                 <img
-                  src="/images/blog_images/cardinal.jpg"
+                  src={
+                    process.env.PUBLIC_URL + "/images/blog_images/cardinal.jpg"
+                  }
                   className="blog-image small-image"
                   alt="Cardinal"
                 />
                 <img
-                  src="/images/blog_images/greycatbird.jpg"
+                  src={
+                    process.env.PUBLIC_URL +
+                    "/images/blog_images/greycatbird.jpg"
+                  }
                   className="blog-image small-image"
                   alt="Grey Cat Bird"
                 />
               </div>
-              <a href="#" className="links">
+              <Link to="/blog" className="links">
                 <div className="margin">
                   <img
-                    src="/images/blog_images/greenquad.jpg"
+                    src={
+                      process.env.PUBLIC_URL +
+                      "/images/blog_images/greenquad.jpg"
+                    }
                     className="blog-image large-image"
                     alt="Green Quad UOFSC"
                   />
                 </div>
-              </a>
+              </Link>
             </div>
           </section>
 
-          <section id="most-recent-pictures" class="center margin ">
-        <h3 class="center margin"> Recent Blogs</h3>
+          <section id="most-recent-pictures" className="center margin ">
+            <h3 className="center margin"> Recent Blogs</h3>
 
-        <a href="blog.html" className="links container">
-          <div className="">
-            <img
-              src="images/blog_images/betty.jpg"
-              className="blog-image center" alt="betty"
-            />
-          </div>
+            <Link to="/blog" className="links container">
+              <div className="">
+                <img
+                  src={process.env.PUBLIC_URL + "/images/blog_images/betty.jpg"}
+                  className="blog-image center"
+                  alt="betty"
+                />
+              </div>
 
-          <div className="blog-text">
-            <p>
-              I started getting into indoor plants and gardening because of my
-              grandmother. Multiple of my plants are from her that I got for my
-              birthday!
-            </p>
-            <p>(in the picture is Betty)</p>
-          </div>
-        </a>
-      </section>
+              <div className="blog-text">
+                <p>
+                  I started getting into indoor plants and gardening because of
+                  my grandmother. Multiple of my plants are from her that I got
+                  for my birthday!
+                </p>
+                <p>(in the picture is Betty)</p>
+              </div>
+            </Link>
+          </section>
         </div>
       </section>
-
-      
     </main>
   );
 }
