@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/VerdantVibe/static/css/main.47404218.css",
+    "main.css": "/VerdantVibe/static/css/main.8f7b5e71.css",
     "main.js": "/VerdantVibe/static/js/main.a7f34368.js",
     "index.html": "/VerdantVibe/index.html",
-    "main.47404218.css.map": "/VerdantVibe/static/css/main.47404218.css.map",
+    "main.8f7b5e71.css.map": "/VerdantVibe/static/css/main.8f7b5e71.css.map",
     "main.a7f34368.js.map": "/VerdantVibe/static/js/main.a7f34368.js.map"
   },
   "entrypoints": [
-    "static/css/main.47404218.css",
+    "static/css/main.8f7b5e71.css",
     "static/js/main.a7f34368.js"
   ]
 }
