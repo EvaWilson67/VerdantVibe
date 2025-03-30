@@ -43,6 +43,7 @@
 /* Small Screens*/
 @media only screen and (max-width: 999px) {
   .blog-image {
+    margin-top: 50px;
     margin-right: auto;
     display: block;
     margin-left: auto;
