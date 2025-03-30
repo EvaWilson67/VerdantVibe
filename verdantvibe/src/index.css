@@ -69,15 +69,12 @@ body {
   color: var(--header-footer-background-color);
 }
 
-
 /* Helper Tools*/
 .height-center {
   margin-top: auto;
   margin-bottom: auto;
-  img {
-    width: 100px;
-    height: auto;
-  }
+  width: 100px;
+  height: auto;
 }
 
 .right {
@@ -107,8 +104,8 @@ body {
   display: none !important;
 }
 
-.float-right{
-  float:right;
+.float-right {
+  float: right;
 }
 
 .back-button {
@@ -140,8 +137,6 @@ body {
   .page-background-small {
     background-color: var(--main-background-color);
   }
-
-
 }
 
 /* Larger screens */
@@ -181,5 +176,4 @@ body {
     width: 85%;
     max-width: 1000px;
   }
-
 }

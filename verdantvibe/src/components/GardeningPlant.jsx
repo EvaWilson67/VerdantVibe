@@ -5,7 +5,7 @@ function GardeningPlant(props) {
         <section className="columns two gallery">
         <div className="plant-fragments">
             <h2 className="hide-for-large">{props.name}</h2>
-            <img src={props.image1} alt={props.name} />
+            <img className="fragments-image" src={props.image1} alt={props.name} />
             <div className=" fragments">
                 <h3>Origin</h3>
                 <p>
