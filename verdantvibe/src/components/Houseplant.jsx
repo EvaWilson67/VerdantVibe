@@ -1,8 +1,10 @@
+import { Outlet, Link } from "react-router-dom";
+
 import "./css/Houseplant.css";
 
 function HousePlant(props) {
   return (
-      <a href={props.url} class="links">
+      <Link to={props.url} class="links">
         <section className="segment columns center">
           <div className="height-center">
             <img src={props.image} alt={props.name} />
@@ -12,7 +14,7 @@ function HousePlant(props) {
             <p>{props.description}</p>
           </div>
         </section>
-      </a>
+      </Link>
   );
 }
 

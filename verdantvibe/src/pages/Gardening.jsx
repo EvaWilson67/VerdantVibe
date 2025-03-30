@@ -11,19 +11,19 @@ function Gardening() {
           <h2>Vegetables</h2>
           <div class="columns three gallery">
             <Garden
-              url="#"
+              url="/kabocha"
               name="Kabocha"
               image="images/garden_images/squash.jpg"
             />
 
             <Garden
-              url="#"
+              url="/eggplant"
               name="Eggplants"
               image="images/garden_images/eggplant.jpg"
             />
 
             <Garden
-              url="#"
+              url="/corn"
               name="Corn"
               image="images/garden_images/corn.jpg"
             />
@@ -34,17 +34,17 @@ function Gardening() {
           <h2>Fruits</h2>
           <div class="columns three gallery">
           <Garden
-              url="#"
+              url="/peaches"
               name="Peaches"
               image="images/garden_images/peaches.jpg"
             />
             <Garden
-              url="#"
+              url="/blackberry"
               name="Blackberry"
               image="images/garden_images/blackberry.jpg"
             />
             <Garden
-              url="#"
+              url="/blueberries"
               name="Blueberries"
               image="images/garden_images/blueberries.jpg"
             />
@@ -56,17 +56,17 @@ function Gardening() {
           <h2>Herbs</h2>
           <div class="columns three gallery">
           <Garden
-              url="#"
+              url="/dill"
               name="Dill"
               image="images/garden_images/dill.jpg"
             />
             <Garden
-              url="#"
+              url="/basil"
               name="Basil"
               image="images/garden_images/basil.jpg"
             />
             <Garden
-              url="#"
+              url="/mint"
               name="Mint"
               image="images/garden_images/mint.jpg"
             />
@@ -78,17 +78,17 @@ function Gardening() {
           <h2>Flowers</h2>
           <div class="columns three gallery">
           <Garden
-              url="#"
+              url="/sunFlower"
               name="Sunflower"
               image="images/garden_images/sunflower.jpg"
             />
             <Garden
-              url="#"
+              url="/carnation"
               name="Carnations"
               image="images/garden_images/carnations.jpg"
             />
             <Garden
-              url="#"
+              url="/lavendar"
               name="Lavender"
               image="images/garden_images/lavendar.jpg"
             />

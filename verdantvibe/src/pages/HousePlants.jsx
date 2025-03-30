@@ -6,14 +6,16 @@ function HousePlants() {
   return (
     <main className="page-content">
       <h1 className="center house-plants"> Basic House Plants</h1>
-      <h3 class="center house-plants">Some of the Best Plants to Own Based on Level of Experience</h3>
+      <h3 class="center house-plants">
+        Some of the Best Plants to Own Based on Level of Experience
+      </h3>
 
       <section className="columns three center">
         <div className="house-plants">
           <h3>Easy</h3>
           <div className="house-plants-information">
             <HousePlant
-              url="#"
+              url="/snakePlant"
               name="Snake Plant"
               description=" Snake plants are low-maintenance indoor plants with tall, upright leaves. They
                                         thrive in various lighting conditions and are known for purifying the air.
@@ -21,7 +23,7 @@ function HousePlants() {
               image="images/house_images/snakeplant.jpg"
             />
             <HousePlant
-              url="#"
+              url="/arrowHead"
               name="Arrow-head"
               description=" The arrowhead plantis a fast-growing vine with arrow-shaped leaves (as one can
                                         guess) and varies in color. It
@@ -29,7 +31,7 @@ function HousePlants() {
               image="images/house_images/arrowhead.jpg"
             />
             <HousePlant
-              url="#"
+              url="/goldenPothos"
               name="Golden Pythos"
               description="  Golden Pothos is a low-maintenance, vine with heart shaped glossy leaves that
                                         has
@@ -45,7 +47,7 @@ function HousePlants() {
           <h3>Medium</h3>
           <div className="house-plants-information">
             <HousePlant
-              url="#"
+              url="/swissCheese"
               name="Swiss Cheese"
               description="Tropical vine known for its unique, hole-punched leaves. It thrives in bright,
                                         indirect light but can still tolerate low light level conditions. It even enjoys
@@ -53,7 +55,7 @@ function HousePlants() {
               image="images/house_images/swisscheese.jpg"
             />
             <HousePlant
-              url="#"
+              url="/peaceLily"
               name="Peace Lily"
               description="  A popular indoor plant known for its glossy dark green leaves and elegant white
                                         flowers.
@@ -63,7 +65,7 @@ function HousePlants() {
               image="images/house_images/peacelily.jpg"
             />
             <HousePlant
-              url="#"
+              url="/parlorPalm"
               name="Parlor Palm"
               description=" Known to be an 'elegant' indoor plant with feathery fronds and ability to thrine
                                         in
@@ -79,7 +81,7 @@ function HousePlants() {
           <h3>Hard</h3>
           <div className="house-plants-information">
             <HousePlant
-              url="#"
+              url="/bonsai"
               name="Bonsai Trees"
               description=" One of the harder to care for, stating from personal experience. They aren't
                                         genetically dwarf, and require egular pruning, proper watering, and providing
@@ -88,7 +90,7 @@ function HousePlants() {
             />
 
             <HousePlant
-              url="#"
+              url="/hoya"
               name="Hoya"
               description=" A trailing vine with thick, waxy leaves. It can produce fragrant, star-shaped
                                         flowers. It thrives in bright, indirect light. The reason why I call it somewhat
@@ -98,7 +100,7 @@ function HousePlants() {
             />
 
             <HousePlant
-              url="#"
+              url="/prayerPlant"
               name="Prayer plants"
               description=" Striking foliage, with vibrant patterns and the unique ability to fold its
                                         leaves at

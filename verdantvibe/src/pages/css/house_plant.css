@@ -1,0 +1,44 @@
+.plant-fragments {
+    margin: 10px;
+  }
+
+
+.plant-fragments {
+    img {
+      width: 100%;
+      margin: 5px solid var(--container-border-color);
+    }
+  }
+
+
+.fragments {
+    background-color: var(--main-background-color);
+    border: 1px solid var(--container-border-color);
+    margin: 10px 0px;
+  }
+
+/* Small Screens*/
+@media only screen and (max-width: 999px) {
+    .plant-fragments img {
+        max-width: 60%;
+        max-height: 600px;
+        margin-left: auto;
+        display: block;
+        margin-right: auto;
+      } 
+}
+
+  
+/* Larger screens */
+@media only screen and (min-width: 1000px) {
+    .plant-fragments {
+        width: 45%;
+      }
+    .image-text {
+        position: relative;
+        top: -50px;
+        left: 10px;
+        /* margin-bottom:-100px; */
+      }
+    
+}
