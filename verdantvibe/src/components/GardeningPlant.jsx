@@ -31,7 +31,7 @@ function GardeningPlant(props) {
                 </p>
             </div>
             <div className="center margin">
-                <img src={props.image2} alt={props.name}/>
+                <img className="fragments-image" src={props.image2} alt={props.name}/>
             </div>
             <div className="fragments">
                 <h3>More Research</h3>
