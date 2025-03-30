@@ -6,7 +6,7 @@ import logo from "./images/freelogo.jpg";
 function Navigation() {
   return (
     <nav id="main-nav" className="columns three center">
-      <ul className="hide-for-small">
+      <ul className="">
         <li>
           <Link to="/">Home</Link>
         </li>
@@ -18,7 +18,7 @@ function Navigation() {
         </li>
       </ul>
       <img className="logo" src={logo} alt="Logo" />
-      <ul className="hide-for-small">
+      <ul className="">
         <li>
           <Link to="/care">Care</Link>
         </li>

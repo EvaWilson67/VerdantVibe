@@ -120,9 +120,9 @@ body {
 
 /* Small Screens*/
 @media only screen and (max-width: 999px) {
-  /* .hide-for-small {
+  .hide-for-small {
     display: none !important;
-  } */
+  }
   .hide-for-large {
     display: block !important;
   }
