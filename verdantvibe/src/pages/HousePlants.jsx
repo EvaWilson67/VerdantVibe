@@ -6,7 +6,7 @@ function HousePlants() {
   return (
     <main className="page-content">
       <h1 className="center house-plants"> Basic House Plants</h1>
-      <h3 class="center house-plants">
+      <h3 className="center house-plants">
         Some of the Best Plants to Own Based on Level of Experience
       </h3>
 

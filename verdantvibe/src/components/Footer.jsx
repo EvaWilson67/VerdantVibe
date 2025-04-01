@@ -5,12 +5,12 @@ function Footer() {
     <footer className="main-footer">
       <div className="footer-content center columns gallery two">
         <p>&copy; EvaWilson</p>
-        <input
+        {/* <input
           type="button"
-          class="back-button"
+          className="back-button"
           value="Back"
-          onclick="window.history.back()"
-        />
+          onClick="window.history.back()"
+        /> */}
       </div>
     </footer>
   );

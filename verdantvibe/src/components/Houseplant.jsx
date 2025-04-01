@@ -4,7 +4,7 @@ import "./css/Houseplant.css";
 
 function HousePlant(props) {
   return (
-      <Link to={props.url} class="links">
+      <Link to={props.url} className="links">
         <section className="segment columns center">
           <div className="height-center">
             <img src={props.image} alt={props.name} />

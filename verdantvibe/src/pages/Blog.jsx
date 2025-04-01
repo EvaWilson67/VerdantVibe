@@ -4,9 +4,9 @@ import BlogComponent from "../components/BlogCompontent";
 
 function Blog() {
   return (
-    <main class="page-content">
+    <main className="page-content">
       <h2>Previous Blogs</h2>
-      <section id="blog" class="two columns gallery">
+      <section id="blog" className="two columns gallery">
         <BlogComponent
           date="11-10-2024"
           description="On my walk around campus I saw a cardinal!"

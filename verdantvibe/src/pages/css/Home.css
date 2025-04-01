@@ -26,10 +26,6 @@
 }
 
 .blog-text {
-  position: relative;
-  right: -70px;
-  top: -70px;
-  margin-bottom: -90px;
 
   background-color: var(--main-background-color);
   border: 10px solid var(--container-border-color);
@@ -57,6 +53,10 @@
       margin-right: auto;
     }
   }
+
+  .blog-text {
+    position: relative;  
+  }
 }
 
 /* Larger screens */
@@ -71,5 +71,13 @@
     img {
       max-width: 100%;
     }
+  }
+
+  .blog-text {
+    position: relative;
+    right: -70px;
+    top: -70px;
+    margin-bottom: -90px;
+  
   }
 }

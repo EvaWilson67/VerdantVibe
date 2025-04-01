@@ -5,10 +5,10 @@ import "./css/Garden.css";
 
 function Garden(props) {
   return (
-    <Link to={props.url} class="links">
+    <Link to={props.url} className="links">
       <div className="unhidden-title node">
         <img src={props.image} alt={props.name} />
-        <div class="title-container">
+        <div className="title-container">
           <h4>{props.name}</h4>
         </div>
       </div>
