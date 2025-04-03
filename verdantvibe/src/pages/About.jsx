@@ -1,6 +1,33 @@
+import { useState } from "react";
+
 import "./css/About.css";
 
 function About() {
+  const [result, setResult] = useState("");
+
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    setResult("Sending....");
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "01d01a06-6e66-4f6b-8522-2e9693b1dbeb");
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData,
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+      setResult("Form Submitted Successfully");
+      event.target.reset();
+    } else {
+      console.log("Error", data);
+      setResult(data.message);
+    }
+  };
+
   return (
     <>
       <section className="page-content">
@@ -28,6 +55,34 @@ function About() {
         <div id="contact-section" className="center">
           <section>
             <h2>Contact Us</h2>
+            <div>
+              <form onSubmit={onSubmit}>
+                <div id="txt-information" className="columns">
+                  <div className="contact-text-box">
+                    <label for="txt-name">Enter Name:</label>
+                    <input id="txt-name" type="text" name="name" required />
+                  </div>
+                  <div className="contact-text-box">
+                    <label for="txt-email">Enter Email:</label>
+                    <input type="email" name="email" required />
+                  </div>
+                </div>
+
+                <div className="bottom-text">
+                  <div className="contact-text-box">
+                  <label for="txt-box">How can we help?</label>
+                  <textarea name="message" required></textarea>
+                  </div>
+                  <div className="float-right btn-submit">
+                  <button type="submit">Submit Form</button>
+
+                  </div>
+
+                </div>
+
+              </form>
+              <span>{result}</span>
+            </div>
           </section>
         </div>
       </section>

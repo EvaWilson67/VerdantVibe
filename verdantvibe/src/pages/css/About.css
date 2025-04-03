@@ -27,4 +27,9 @@ txt-information input {
     margin: 10px;
     color: var(--header-footer-background-color);
   }
+
+
+.btn-submit{
+  margin-left:-110px;
+}
   
