@@ -1,16 +1,16 @@
-import "./css/Resources.css"
+import "./css/Resources.css";
 
-import Resource from "../components/Resource"
-function Resources(){
-    return(
-        <main className="page-background">
-            <section className="page-content page-background">
-                <h1 className="center margin"> Other Resources</h1>
-                <h3 className="center margin"> Sources and Inspirations I used</h3>
+import ResourcePlan from "../components/ResoursePlan";
+function Resources() {
+  return (
+    <main className="page-background">
+      <section className="page-content page-background">
+        <h1 className="center margin"> Other Resources</h1>
+        <h3 className="center margin"> Sources and Inspirations I used</h3>
 
-                <section id="resouce-columns" className="three gallery columns">
+          <ResourcePlan />
 
-                <Resource
+        {/* <Resource
                 name="houseplantjournal"
                 description= "A great plant blog that has it's own podcast."
                 image="images/resource_images/houseplantjournal.png  " 
@@ -63,13 +63,10 @@ function Resources(){
                 description="Houseplants have the power to transform any room. With their lush foliage and structural beauty, they help create indoor oases that bring a sense of tranquility to our busy lives. "
                 image="images/resource_images/plantopedia.png" 
                 url="https://www.barnesandnoble.com/w/plantopedia-lauren-camilleri/1137000608?ean=9781925811773&gStoreCode=3462&gQT=1"
-                />
-
-                </section>
-            </section>
-
-        </main>
-    );
+                /> */}
+      </section>
+    </main>
+  );
 }
 
 export default Resources;

@@ -1,7 +1,6 @@
 import "./css/Care.css";
 
-import PlantCare from "../components/PlantCare";
-
+import CarePlant from "../components/CarePlant";
 
 
 function Care() {
@@ -10,8 +9,9 @@ function Care() {
       <section id="care-instructions" className="page-content page-background">
         <h1>Basic Plant Instructions</h1>
 
-        <section className="center">
-          <PlantCare
+        <CarePlant />
+
+          {/* <PlantCare
             name="Lighting"
             description="Most indoor plants do well with bright, indirect light, where they get plenty of light without being exposed to harsh, direct sun. Some plants, like succulents and cacti, need direct sunlight, while others, like pythos and snake plants, are more adaptable to low-light conditions. Finding the right balance of light is important to avoid issues like leaf burn."
             image="images/PlantCare/lighting.jpg"
@@ -37,9 +37,7 @@ function Care() {
             image="images/PlantCare/repotting.jpg"
             imageFirst={false}
 
-          />
-        </section>
-
+          /> */}
       </section>
     </main>
   );

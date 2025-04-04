@@ -1,15 +1,36 @@
+import axios from "axios";
+import { useState, useEffect } from "react";
+import { Outlet, Link } from "react-router-dom";
+
+import "./css/Resource.css"
+
 import Resource from "./Resource";
 
-const ResourcePlan = () =>{
-    return(
-        <div id="resources" className="columns">
-            <Resource 
-                name="FUCK"
-            />
-        </div>
+const ResourcePlan = () => {
+  const [resources, setResouce] = useState([]);
 
+  //after page loaded to asynch json retrieval
+  useEffect(() => {
+    (async () => {
+      const response = await axios.get("http://localhost:3001/api/resources");
+      setResouce(response.data);
+    })();
+  }, []);
 
-    )
-}
+  return (
+    <section id="resouce-columns" className="three gallery columns">
+      {resources.map((resource) => (
+        <Resource
+          _id="1"
+          name={resource.name}
+          description={resource.summary}
+          image={resource.image}
+          url={resource.link}
+          type={resource.type}
+        />
+      ))}
+    </section>
+  );
+};
 
 export default ResourcePlan;

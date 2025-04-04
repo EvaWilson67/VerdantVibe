@@ -1,13 +1,13 @@
 import "./css/Gardening.css";
 
-import Garden from "../components/Garden";
+import GardenPlants from "../components/Garden_Plants";
 
 function Gardening() {
   return (
     <main className="page-content">
       <h1 className="center gardening-col"> Gardening</h1>
-      <div className="center">
-        <section className="gardening-col">
+      <GardenPlants />
+        {/* <section className="gardening-col">
           <h2>Vegetables</h2>
           <div className="columns three gallery">
             <Garden
@@ -91,8 +91,7 @@ function Gardening() {
               image="images/garden_images/lavendar.jpg"
             />
           </div>
-        </section>
-      </div>
+        </section> */}
     </main>
   );
 }

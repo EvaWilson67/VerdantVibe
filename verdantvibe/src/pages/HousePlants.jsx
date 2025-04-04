@@ -1,6 +1,6 @@
 import "./css/HousePlants.css";
 
-import HousePlant from "../components/Houseplant";
+import Houseplants from "../components/House_Plants";
 
 function HousePlants() {
   return (
@@ -10,7 +10,9 @@ function HousePlants() {
         Some of the Best Plants to Own Based on Level of Experience
       </h3>
 
-      <section className="columns three center">
+      <Houseplants />
+
+      {/* <section className="columns three center">
         <div className="house-plants">
           <h3>Easy</h3>
           <div className="house-plants-information">
@@ -110,7 +112,7 @@ function HousePlants() {
             />
           </div>
         </div>
-      </section>
+      </section> */}
     </main>
   );
 }

@@ -51,22 +51,22 @@ function Navigation() {
         <div className={menuOpen ? "" : "hide"}>
           <ul className="nav-items gallery">
             <li>
-              <a href="index.html"> Home </a>
+            <Link to="/">Home</Link>
             </li>
             <li>
-              <a href="house_plants.html"> House Plants </a>
+            <Link to="/houseplant">House Plants</Link>
             </li>
             <li>
-              <a href="gardening.html"> Gardening </a>
+            <Link to="/gardening">Gardening</Link>
             </li>
             <li>
-              <a href="care.html"> Care </a>
+            <Link to="/care">Care</Link>
             </li>
             <li>
-              <a href="resources.html"> Resources </a>
+            <Link to="/resources">Resources</Link>
             </li>
             <li>
-              <a href="contact.html"> Contact </a>
+            <Link to="/about">Contact</Link>
             </li>
           </ul>
           {/* <ul className={menuOpen?"":"hide-for-small"}>

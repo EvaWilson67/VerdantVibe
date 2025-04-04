@@ -9,7 +9,7 @@ function PlantCare(props) {
       {props.imageFirst ? (
         <>
           <div className="idea-img">
-            <img src={props.image} alt={props.name} />
+            <img src={"http://localhost:3001/images/care_images/" + props.image} alt={props.name} />
           </div>
           <div>
             <h3>{props.name}</h3>
@@ -23,7 +23,7 @@ function PlantCare(props) {
             <p>{props.description}</p>
           </div>
           <div className="idea-img">
-            <img src={props.image} alt={props.name} />
+            <img src={"http://localhost:3001/images/care_images/" + props.image} alt={props.name} />
           </div>
         </>
       )}
