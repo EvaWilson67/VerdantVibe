@@ -6,7 +6,7 @@ function ArrowHead() {
   return (
     <main className="page-background page-background-small">
       <IndoorPlant
-        image="images/house_images/arrowhead.jpg"
+        image="arrowhead.jpg"
         name="Arrowhead"
         description=" A fast-growing vine with arrow-shaped leaves that can be green or variegated with white,
                                 pink, or cream. It thrives in bright, indirect light but can tolerate lower light

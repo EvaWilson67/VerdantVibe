@@ -6,7 +6,7 @@ function SunFlower() {
     <main className="page-content">
       <GardeningPlant
         name="Sunflower"
-        image1="images/garden_images/sunflower2.jpg"
+        image1="sunflower2.jpg"
         description="Native Americans cultivated the sunflower from its original bushy, multi-headed type to
                             produce a single-stemmed plant bearing a large flower."
         research=" Here are some articles that I got some of the above
@@ -27,7 +27,7 @@ function SunFlower() {
         li3="Grow best in warm temperatures"
         care2=" Space the seeds or seedlings about 6-12 inches apart for smaller varieties and 18-24 inches
                             for larger ones to allow for healthy growth and air circulation."
-        image2="images/garden_images/sunflower.jpg"
+        image2="sunflower.jpg"
       />
     </main>
   )

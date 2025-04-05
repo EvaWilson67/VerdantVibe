@@ -5,7 +5,7 @@ function GardeningPlant(props) {
         <section className="columns two gallery">
         <div className="plant-fragments">
             <h2 className="hide-for-large">{props.name}</h2>
-            <img className="fragments-image" src={props.image1} alt={props.name} />
+            <img className="fragments-image" src={"https://verdant-server.onrender.com/images/garden_images/" + props.image1} alt={props.name} />
             <div className=" fragments">
                 <h3>Origin</h3>
                 <p>
@@ -31,7 +31,7 @@ function GardeningPlant(props) {
                 </p>
             </div>
             <div className="center margin">
-                <img className="fragments-image" src={props.image2} alt={props.name}/>
+                <img className="fragments-image" src={"https://verdant-server.onrender.com/images/garden_images/" + props.image2} alt={props.name}/>
             </div>
             <div className="fragments">
                 <h3>More Research</h3>

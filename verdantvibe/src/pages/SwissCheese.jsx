@@ -5,7 +5,7 @@ function SwissCheese() {
   return (
     <main className="page-background page-background-small">
       <IndoorPlant
-        image="images/house_images/swisscheese.jpg"
+        image="swisscheese.jpg"
         name="Swiss Cheese Plant"
         description="Often confused with its cousin, the larger Monstera deliciosa, but the Swiss Cheese
                                 Plant has smaller leaves and a more compact growth habit."

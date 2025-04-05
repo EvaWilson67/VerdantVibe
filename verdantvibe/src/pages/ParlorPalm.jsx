@@ -5,7 +5,7 @@ function ParlorPalm() {
   return (
     <main className="page-background page-background-small">
       <IndoorPlant
-        image="images/house_images/parlorpalm.jpg"
+        image="parlorpalm.jpg"
         name="Parlor Palm"
         description=" a popular, low-maintenance houseplant known for its elegant, feathery fronds and ability
                                 to thrive in indoor environments. Native to Central America, this palm is perfect for

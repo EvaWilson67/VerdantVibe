@@ -6,7 +6,7 @@ function Blueberries() {
     <main className="page-content">
       <GardeningPlant
         name="Blueberries"
-        image1="images/garden_images/blueberries2.jpg"
+        image1="blueberries2.jpg"
         description="The story of modern blueberry cultivation began with Elizabeth White, the daughter of a New
                             Jersey cranberry farmer, who saw the potential in blueberries in the late 1890s. In the
                             early 1900s, USDA botanist Frank Coville discovered that blueberries require acidic soil, a
@@ -31,7 +31,7 @@ function Blueberries() {
         li3="Blueberries need consistent moisture, especially during the growing season."
         care2="Space plants about 18–24 inches apart for compact varieties and 4–5 feet apart for larger
                             varieties. Rows should be about 4–5 feet apart to allow for airflow and growth. "
-        image2="images/garden_images/blueberries.jpg"
+        image2="blueberries.jpg"
       />
     </main>
   )

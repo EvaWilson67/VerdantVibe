@@ -6,7 +6,7 @@ function PeaceLily() {
   return (
     <main className="page-background page-background-small">
       <IndoorPlant
-        image="images/house_images/peacelily.jpg"
+        image="peacelily.jpg"
         name="Peace Lily"
         description="Attractive indoor foliage plants that produce showy white flowers. They are not true
                                 lilies but a member of the Araceae family, which also includes caladiums, elephant ears,

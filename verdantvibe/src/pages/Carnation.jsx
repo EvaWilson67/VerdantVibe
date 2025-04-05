@@ -6,7 +6,7 @@ function Carnation() {
     <main className="page-content">
       <GardeningPlant
         name=""
-        image1="images/garden_images/carnations2.jpg"
+        image1="carnations2.jpg"
         description="The carnation has been cultivated for the last 2,000 years. The wild carnation is native to
                             Greece, Italy, Spain, and other Mediterranean countries. They were cultivated by the ancient
                             Greeks and Romans, and later became popular in Europe and Asia. The name 'carnation' is
@@ -27,7 +27,7 @@ function Carnation() {
         li3="Thrive in well-drained, slightly alkaline soil with a pH level of around 6.7 to 7.5."
         care2="  Regularly deadhead spent flowers to encourage new blooms and prevent the plant from becoming
                             leggy. Trim back the stems by about one-third after blooming to maintain shape."
-        image2="images/garden_images/carnations.jpg"
+        image2="carnations.jpg"
       />
     </main>
   )

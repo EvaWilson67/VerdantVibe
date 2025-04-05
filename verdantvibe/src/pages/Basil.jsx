@@ -7,7 +7,7 @@ function Basil() {
     <main className="page-content">
       <GardeningPlant
         name="Basil"
-        image1="images/garden_images/basil2.jpg"
+        image1="basil2.jpg"
         description="Basil is native to tropical regions of Asia and Africa, and it has been used for thousands
                             of years. It was first cultivated in India and spread across Asia and Europe, where it
                             became a staple in Mediterranean cooking. The name “basil” comes from the Greek word
@@ -31,7 +31,7 @@ function Basil() {
         li3="Should be spaced about 12-18 inches apart"
         care2="Basil prefers well-drained, fertile soil that is rich in organic matter. A slightly acidic
                             to neutral pH (6.0 to 7.5) is ideal."
-        image2="images/garden_images/basil.jpg"
+        image2="basil.jpg"
       />
     </main>
   )

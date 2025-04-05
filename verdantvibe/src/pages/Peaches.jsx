@@ -6,7 +6,7 @@ function Peaches() {
 <main className="page-content">
       <GardeningPlant
         name="Peaches"
-        image1="images/garden_images/peaches2.jpg"
+        image1="peaches2.jpg"
         description="The peach probably originated in China and then spread westward through Asia to the
                             Mediterranean countries and later to other parts of Europe. The Spanish explorers took the
                             peach to the New World, and as early as 1600 the fruit was found in Mexico.(britannica) A
@@ -32,7 +32,7 @@ function Peaches() {
         li3="Plant a peach tree in the late winter or early spring while the tree is dormant"
         care2="There are hundreds of peach cultivars to choose from. While peach trees can produce
                             clingstone or freestone fruits, most varieties sold for home gardens are freestone."
-        image2="images/garden_images/peaches.jpg"
+        image2="peaches.jpg"
       />
     </main>  )
 

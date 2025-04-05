@@ -6,7 +6,7 @@ function Lavendar() {
     <main className="page-content">
       <GardeningPlant
         name="Lavendar"
-        image1="images/garden_images/lavendar2.jpg"
+        image1="lavendar2.jpg"
         description="Lavender is actually a herb. I however, had put lavender in flowers because I am not the
                             brightest and didn't care anymore. Lavender is originally from the Mediterranean, although
                             it’s now widely cultivated in temperate regions around the world. There are many species of
@@ -31,7 +31,7 @@ function Lavendar() {
         care2=" Generally pest-resistant, but watch for aphids, spider mites, and fungal diseases like root
                             rot. Ensure good airflow around the plant and avoid overhead watering to help prevent fungal
                             infections."
-        image2="images/garden_images/lavendar.jpg"
+        image2="lavendar.jpg"
       />
     </main>
   )

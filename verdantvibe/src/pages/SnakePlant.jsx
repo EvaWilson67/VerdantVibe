@@ -6,7 +6,7 @@ function SnakePlant() {
   return (
     <main className="page-background page-background-small">
       <IndoorPlant
-        image="images/house_images/snakeplant.jpg"
+        image="snakeplant.jpg"
         name="Snake Plant"
         description=" The snake plant is a resilient, low-maintenance indoor plant known for
                                 its upright, sword-shaped leaves with green and yellow patterns. It can thrive in

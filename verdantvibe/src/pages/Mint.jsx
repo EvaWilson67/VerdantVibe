@@ -6,7 +6,7 @@ function Mint() {
     <main className="page-content">
       <GardeningPlant
         name="Mint"
-        image1="images/garden_images/mint2.jpg"
+        image1="mint2.jpg"
         description="Before appearing in the botanico-medical literature, it can be found in the Greek mythology,
                             which antedates by far and large all medical written documentation. Going further back in
                             time, the very name of Mint in Greek, minthē, is traditionally interpreted as Pre-Greek.
@@ -27,7 +27,7 @@ function Mint() {
         li3="consistently moist soil"
         care2="  Mint is generally pest-resistant but can be susceptible to aphids, spider mites, and other
                             insects. It can also suffer from fungal diseases if the leaves are too wet for too long."
-        image2="images/garden_images/mint.jpg"
+        image2="mint.jpg"
       />
     </main>
   )

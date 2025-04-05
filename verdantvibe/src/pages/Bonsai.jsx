@@ -6,7 +6,7 @@ function Bonsai() {
   return (
     <main className="page-background page-background-small">
       <IndoorPlant
-        image="images/house_images/bonsai.jpg"
+        image="bonsai.jpg"
         name="Bonsai"
         description="  Despite their small size, bonsai trees are typically full-sized species, with the care
                                 and styling process taking years, even decades, to achieve a mature, refined look. They
@@ -28,7 +28,7 @@ function Bonsai() {
         link1name="The living art of Bonsai"
         link2="https://www.verdissimo.com/en/news/facts-about-bonsai"
         link2name=" Facts about Bonsai"
-        link3="https://bonsaiwest.com/resources/bonsai-care/"
+        link3="bonsai-care/"
         link3name="Bonsai Care and Maintenance"
       />
     </main>

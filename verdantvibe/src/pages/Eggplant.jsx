@@ -7,7 +7,7 @@ function Eggplant() {
     <main className="page-content">
       <GardeningPlant
         name="Eggplant"
-        image1="images/garden_images/eggplantlink.jpg"
+        image1="eggplantlink.jpg"
         description=" Technically a berry, the eggplant is related to tomatoes, chili peppers, and potatoes. It
                             was originally domesticated from wild nightshade species, such as thorn or bitter apple,
                             likely through two independent domestications—one in South Asia and another in East Asia.
@@ -29,7 +29,7 @@ function Eggplant() {
         li2="Well Watered, soil is consistenly moist"
         li3="Stable temperatures, 75 and up."
         care2="Fertilize regularly to support strong growth."
-        image2="images/garden_images/eggplantlink2.jpg"
+        image2="eggplantlink2.jpg"
       />
     </main>
   );

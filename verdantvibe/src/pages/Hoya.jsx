@@ -5,7 +5,7 @@ function Hoya() {
   return (
     <main className="page-background page-background-small">
       <IndoorPlant
-        image="images/house_images/hoya.jpg"
+        image="hoya.jpg"
         name="Hoya"
         description=" Commonly known as the Wax Plant, is a genus of tropical plants admired for their
                                 fragrant, waxy flowers and thick, glossy leaves. They are easy to care for and make

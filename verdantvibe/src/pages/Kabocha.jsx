@@ -6,7 +6,7 @@ function Kabocha() {
     <main className="page-content">
     <GardeningPlant
       name="Kabocha"
-      image1="images/garden_images/Kabocha2.jpg"
+      image1="Kabocha2.jpg"
       description="A type of Japanese pumpkin, is believed to have originated in Japan. Its name 'kabocha' is
                             derived from the Portuguese word 'cabocha', which means 'squash' or 'pumpkin.' The vegetable
                             itself, however, was introduced to Japan by Portuguese traders in the 16th century."
@@ -27,7 +27,7 @@ function Kabocha() {
       li3="Mix compost or well-rotted manure into the soil to provide nutrients."
       care2="You’ll know Kabocha is ready for harvest when the skins have changed from shiny to matte and
                             have a toughened exterior."
-      image2="images/garden_images/squash.jpg"
+      image2="squash.jpg"
     />
   </main>
   )

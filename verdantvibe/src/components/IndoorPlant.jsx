@@ -9,7 +9,7 @@ function IndoorPlant(props) {
         <div className="plant-fragments">
             <h2 className="hide-for-large">{props.name}</h2>
 
-            <img src={props.image} className="height-center margin fragments-image" alt={props.name}/>
+            <img src={"https://verdant-server.onrender.com/images/house_images/" + props.image} className="height-center margin fragments-image" alt={props.name}/>
             <div className="image-text fragments">
                 <h3>Description</h3>
                 <p>

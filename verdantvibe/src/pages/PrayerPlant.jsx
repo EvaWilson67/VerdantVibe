@@ -5,7 +5,7 @@ function PrayerPlant() {
   return (
     <main className="page-background page-background-small">
       <IndoorPlant
-        image="images/house_images/prayerplant.jpg"
+        image="prayerplant.jpg"
         name="Prayer Plant"
         description="The Prayer Plant (Maranta leuconeura) is a striking, low-maintenance houseplant known
                                 for its unique, colorful foliage and fascinating behavior. The plant's oval-shaped

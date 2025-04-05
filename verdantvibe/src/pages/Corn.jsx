@@ -6,7 +6,7 @@ function Corn() {
     <main className="page-content">
       <GardeningPlant
         name="Corn"
-        image1="images/garden_images/corn2.jpg"
+        image1="corn2.jpg"
         description="Corn was first domesticated by native peoples in southern Mexico about 10,000 years ago.
                             Modern corn is believed to have been derived from the Balsas teosinte (Zea mays
                             parviglumis), a wild grass. Over time, through selective breeding, corn evolved into the
@@ -28,7 +28,7 @@ function Corn() {
         li3="Keep the area around corn plants free of weeds"
         care2=" Be mindful that corn has shallow roots, so they can be unstable in strong winds, especially
                             when the plants are tall."
-        image2="images/garden_images/corn.jpg"
+        image2="corn.jpg"
       />
     </main>
   )

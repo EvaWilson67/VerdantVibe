@@ -6,7 +6,7 @@ function GoldenPothos() {
   return (
     <main className="page-background page-background-small">
       <IndoorPlant
-        image="images/house_images/goldenpothos.jpg"
+        image="goldenpothos.jpg"
         name="Golden Pothos"
         description=" Also known as Devil's Ivy, is a resilient and versatile houseplant with vibrant,
                                 heart-shaped leaves that often feature yellow or golden markings. . It's a

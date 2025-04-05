@@ -6,7 +6,7 @@ function Blackberry() {
     <main className="page-content">
       <GardeningPlant
         name="Blackberries"
-        image1="images/garden_images/blackberry2.jpg"
+        image1="blackberry2.jpg"
         description="  They likely came from temperate regions in the Northern Hemisphere before spreading across
                             the globe. Blackberries were thought to be a part of the hunter-gatherers’ diets across
                             the world, and many indigenous (including Native Americans) have eaten blackberries for
@@ -29,7 +29,7 @@ function Blackberry() {
         li2="They are adaptable to a variety of soil types but prefer well-draining"
         li3="Stable temperatures, 75 and up."
         care2=" Plant blackberry canes in early spring after the last frost."
-        image2="images/garden_images/blackberry.jpg"
+        image2="blackberry.jpg"
       />
     </main>
   );
