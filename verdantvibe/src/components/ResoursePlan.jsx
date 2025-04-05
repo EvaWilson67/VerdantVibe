@@ -12,7 +12,7 @@ const ResourcePlan = () => {
   //after page loaded to asynch json retrieval
   useEffect(() => {
     (async () => {
-      const response = await axios.get("http://localhost:3001/api/resources");
+      const response = await axios.get("https://verdant-server.onrender.com/api/resources");
       setResouce(response.data);
     })();
   }, []);

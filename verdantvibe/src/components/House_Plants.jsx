@@ -10,7 +10,7 @@ const HousePlants = () => {
   //after page loaded to asynch json retrieval
   useEffect(() => {
     (async () => {
-      const response = await axios.get("http://localhost:3001/api/housePlants");
+      const response = await axios.get("https://verdant-server.onrender.com/api/housePlants");
       setPlants(response.data);
     })();
   }, []);

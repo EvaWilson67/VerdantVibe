@@ -1,12 +1,13 @@
 import "./css/Blog.css";
 
-import BlogComponent from "../components/BlogCompontent";
+import Blogs from "../components/Blogs";
 
 function Blog() {
   return (
     <main className="page-content">
       <h2>Previous Blogs</h2>
-      <section id="blog" className="two columns gallery">
+      <Blogs />
+      {/* <section id="blog" className="two columns gallery">
         <BlogComponent
           date="11-10-2024"
           description="On my walk around campus I saw a cardinal!"
@@ -42,7 +43,7 @@ function Blog() {
           description="I went on a trip with a friend to Charelston SC. We went to the local art museum"
           image="images/blog_images/charelstonart.jpg"
         />
-      </section>
+      </section> */}
     </main>
   );
 }

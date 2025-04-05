@@ -16,7 +16,7 @@ function Gardening() {
               image="images/garden_images/squash.jpg"
             />
 
-            <Garden
+            <Garden 
               url="/eggplant"
               name="Eggplants"
               image="images/garden_images/eggplant.jpg"

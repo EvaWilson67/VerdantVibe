@@ -10,7 +10,7 @@ const CarePlant = () =>{
   //after page loaded to asynch json retrieval
   useEffect(()=>{
     (async () =>{
-      const response = await axios.get("http://localhost:3001/api/care");
+      const response = await axios.get("https://verdant-server.onrender.com/api/care");
       setCare(response.data);
 
     })();
