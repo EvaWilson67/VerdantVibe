@@ -25,7 +25,7 @@ const ResourcePlan = () => {
           name={resource.name}
           description={resource.summary}
           image={resource.image}
-          url={resource.link}
+          url={resource.url}
           type={resource.type}
         />
       ))}
