@@ -1,7 +1,6 @@
 import { Outlet, Link } from "react-router-dom";
 
 import "./css/Navigation.css";
-import logo from "./images/freelogo.jpg";
 
 import { useState } from "react";
 
@@ -25,7 +24,7 @@ function Navigation() {
             <Link to="/gardening">Gardening</Link>
           </li>
         </ul>
-        <img className="logo" src={logo} alt="Logo" />
+        <img className="logo" src={"https://verdant-server.onrender.com/images/freelogo.jpg"} alt="Logo" />
         <ul className="hide-for-small ">
           <li>
             <Link to="/care">Care</Link>

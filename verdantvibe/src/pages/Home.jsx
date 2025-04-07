@@ -19,8 +19,7 @@ function Home() {
 
                     <img
                       src={
-                        process.env.PUBLIC_URL +
-                        "/images/blog_images/personalplantsprt1.jpg"
+                        "https://verdant-server.onrender.com/images/blog_images/personalplantsprt1.jpg"
                       }
                       className="blog-image large-image"
                       alt="Personal Plants"
@@ -42,7 +41,7 @@ function Home() {
               <div className="right-image small-130x-top">
                 <img
                   src={
-                    process.env.PUBLIC_URL + "/images/blog_images/forestguy.jpg"
+                    "https://verdant-server.onrender.com/images/blog_images/forestguy.jpg"
                   }
                   className="hide-for-small blog-image small-image"
                   alt="Forest Guy"
@@ -54,15 +53,15 @@ function Home() {
               <div className="right small-130x hide-for-small">
                 <img
                   src={
-                    process.env.PUBLIC_URL + "/images/blog_images/cardinal.jpg"
+                    "https://verdant-server.onrender.com/images/blog_images/cardinal.jpg"
                   }
                   className="blog-image small-image"
                   alt="Cardinal"
                 />
                 <img
                   src={
-                    process.env.PUBLIC_URL +
-                    "/images/blog_images/greycatbird.jpg"
+                    
+                    "https://verdant-server.onrender.com/images/blog_images/greycatbird.jpg"
                   }
                   className="blog-image small-image"
                   alt="Grey Cat Bird"
@@ -72,8 +71,7 @@ function Home() {
                 <div className="margin">
                   <img
                     src={
-                      process.env.PUBLIC_URL +
-                      "/images/blog_images/greenquad.jpg"
+                     "https://verdant-server.onrender.com/images/blog_images/greenquad.jpg"
                     }
                     className="blog-image large-image"
                     alt="Green Quad UOFSC"
@@ -89,7 +87,7 @@ function Home() {
             <Link to="/blog" className="links container">
               <div className="">
                 <img
-                  src={process.env.PUBLIC_URL + "/images/blog_images/betty.jpg"}
+                  src={"https://verdant-server.onrender.com/images/blog_images/betty.jpg"}
                   className="blog-image center"
                   alt="betty"
                 />
