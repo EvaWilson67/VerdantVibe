@@ -1,36 +1,52 @@
 import axios from "axios";
-import {useState, useEffect} from "react";
+import { useState, useEffect } from "react";
 import { Outlet, Link } from "react-router-dom";
 
 import PlantCare from "./PlantCare";
+import AddCare from "./AddCare";
 
-const CarePlant = () =>{
+const CarePlant = () => {
   const [cares, setCare] = useState([]);
+  const [showAddDialog, setShowAddDialog] = useState(false);
 
+  //https://verdant-server.onrender.com/api/care
   //after page loaded to asynch json retrieval
-  useEffect(()=>{
-    (async () =>{
-      const response = await axios.get("https://verdant-server.onrender.com/api/care");
+  useEffect(() => {
+    (async () => {
+      const response = await axios.get(
+        "http://localhost:3001/api/care"
+      );
       setCare(response.data);
-
     })();
-
   }, []);
 
-  return(
-    <section className="center">
-      {cares.map((care) =>(
-         <PlantCare
-         _id="1"
-         imageFirst={care.imageFirst}
-         image={care.image}
-         name={care.name}
-         description={care.summary}
-       />
+  const openAddDialog = () => {
+    setShowAddDialog(true);
+  };
 
-      ))}
-    </section>
-  )
-}
+  const closeAddDialog = () => {
+    console.log("I'm in the close method");
+    setShowAddDialog(false);
+  };
+
+  return (
+    <>
+    <button id="add-symbol" className="float-right" onClick={openAddDialog}>+</button>
+    {showAddDialog?(<AddCare closeAddDialog={closeAddDialog} />) : ("")}
+
+      <section className="center">
+        {cares.map((care) => (
+          <PlantCare
+            _id="1"
+            imageFirst={care.imageFirst}
+            image={care.image}
+            name={care.name}
+            description={care.summary}
+          />
+        ))}
+      </section>
+    </>
+  );
+};
 
 export default CarePlant;

@@ -4,6 +4,7 @@
     margin: 10px;
     img{
       border:5px solid var(--container-background-color);
+      max-width:300px;
     }
   }
 
