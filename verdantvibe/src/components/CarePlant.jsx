@@ -9,12 +9,13 @@ const CarePlant = () => {
   const [cares, setCare] = useState([]);
   const [showAddDialog, setShowAddDialog] = useState(false);
 
+  //http://localhost:3001/api/care
   //https://verdant-server.onrender.com/api/care
   //after page loaded to asynch json retrieval
   useEffect(() => {
     (async () => {
       const response = await axios.get(
-        "http://localhost:3001/api/care"
+        "https://verdant-server.onrender.com/api/care"
       );
       setCare(response.data);
     })();

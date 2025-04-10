@@ -11,6 +11,9 @@ const AddCare = (props) => {
     setPrevSrc(URL.createObjectURL(event.target.files[0]));
   };
 
+  // /"http://localhost:3001/api/care"
+  //"https://verdant-server.onrender.com/api/care/"
+
   const addToServer = async (event) => {
     // event.preventDefault(); 
     setResult("Sending...");
@@ -18,7 +21,7 @@ const AddCare = (props) => {
     const formData = new FormData(event.target);
     console.log(...formData);
 
-    const response = await fetch("http://localhost:3001/api/care", {
+    const response = await fetch("http://localhost:3001/api/care/", {
       method: "POST",
       body: formData,
     });

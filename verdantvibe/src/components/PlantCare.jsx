@@ -1,6 +1,6 @@
 import "./css/PlantCare.css";
 
-
+// /"http://localhost:3001/images/care_images/"
 //https://verdant-server.onrender.com/images/care_images/
 function PlantCare(props) {
   return (
@@ -9,7 +9,7 @@ function PlantCare(props) {
       {props.imageFirst === "true" ? (
         <>
           <div className="idea-img">
-            <img className="" src={"http://localhost:3001/images/care_images/" + props.image} alt={props.name} />
+            <img className="" src={ "https://verdant-server.onrender.com/images/care_images/" + props.image} alt={props.name} />
           </div>
           <div>
             <h3>{props.name}</h3>
@@ -23,7 +23,7 @@ function PlantCare(props) {
             <p>{props.description}</p>
           </div>
           <div className="idea-img">
-            <img src={"http://localhost:3001/images/care_images/" + props.image} alt={props.name} />
+            <img src={"https://verdant-server.onrender.com/images/care_images/" + props.image} alt={props.name} />
           </div>
         </>
       )}

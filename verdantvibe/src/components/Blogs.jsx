@@ -14,7 +14,7 @@ const Blogs = () => {
   //after page loaded to asynch json retrieval
   useEffect(() => {
     (async () => {
-      const response = await axios.get("http://localhost:3001/api/blog");
+      const response = await axios.get("https://verdant-server.onrender.com/api/blog");
       setBlog(response.data);
     })();
   }, []);

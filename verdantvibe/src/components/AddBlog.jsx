@@ -12,6 +12,8 @@ const AddBlog = (props) => {
     setPrevSrc(URL.createObjectURL(event.target.files[0]));
   };
 
+  //"https://verdant-server.onrender.com/api/blog"
+  //"http://localhost:3001/api/blog"
   const addToServer = async (event) => {
     // event.preventDefault(); 
     setResult("Sending...");
@@ -19,7 +21,7 @@ const AddBlog = (props) => {
     const formData = new FormData(event.target);
     console.log(...formData);
 
-    const response = await fetch("http://localhost:3001/api/blog", {
+    const response = await fetch("https://verdant-server.onrender.com/api/blog", {
       method: "POST",
       body: formData,
     });
