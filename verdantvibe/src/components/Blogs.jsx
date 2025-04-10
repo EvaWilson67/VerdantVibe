@@ -28,10 +28,15 @@ const Blogs = () => {
     setShowAddDialog(false);
   };
 
+  const updateBlog = (housePlan) => {
+    setBlog((houses)=>[...houses, housePlan]);
+};
+
+
   return (
     <>
     <button id="add-symbol" className="float-right" onClick={openAddDialog}>+</button>
-    {showAddDialog?(<AddBlog closeAddDialog={closeAddDialog} />) : ("")}
+    {showAddDialog?(<AddBlog closeAddDialog={closeAddDialog} updateBlog={updateBlog} />) : ("")}
       <section id="blog" className="two columns gallery">
         {blogs.map((blog) => (
           <BlogComponent

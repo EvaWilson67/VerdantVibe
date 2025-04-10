@@ -7,31 +7,40 @@ import React, { useState } from "react";
 const AddBlog = (props) => {
   const [result, setResult] = useState("");
   const [prevSrc, setPrevSrc] = useState("");
+  const [inputs, setInputs] = useState({});
 
-  const uploadImage = (event) => {
-    setPrevSrc(URL.createObjectURL(event.target.files[0]));
+  const handleImageChange = (event) => {
+    const name = event.target.name;
+    const value = event.target.files[0];
+    setInputs((values) => ({ ...values, [name]: value }));
   };
 
   //"https://verdant-server.onrender.com/api/blog"
   //"http://localhost:3001/api/blog"
   const addToServer = async (event) => {
-    // event.preventDefault(); 
+    event.preventDefault();
     setResult("Sending...");
 
     const formData = new FormData(event.target);
     console.log(...formData);
 
-    const response = await fetch("https://verdant-server.onrender.com/api/blog", {
-      method: "POST",
-      body: formData,
-    });
+    const response = await fetch(
+      "https://verdant-server.onrender.com/api/blog",
+      {
+        method: "POST",
+        body: formData,
+      }
+    );
+    
 
     if (response.status === 200) {
-      setResult("House plan added successfully");
+      setResult("Blog added successfully");
       event.target.reset();
       props.closeAddDialog();
+      props.updateBlog(await response.json());      
     } else {
-      setResult("Error adding house");
+      console.log("Error adding house", response);
+      setResult(response.message);
     }
   };
 
@@ -52,7 +61,7 @@ const AddBlog = (props) => {
 
             <p>
               <label htmlFor="name">Enter Date: (mm-dd-yy)</label>
-              <input type="text" id="name" name="name" required min="5"></input>
+              <input type="text" id="date" name="date" required min="5"></input>
             </p>
 
             <p>
@@ -66,7 +75,7 @@ const AddBlog = (props) => {
               ></input>
             </p>
 
-            <section className="columns">
+            {/* <section className="columns">
               <p id="img-prev-section">
                 {prevSrc !== "" ? (
                   <img id="img-prev" src={prevSrc} alt=""></img>
@@ -77,7 +86,6 @@ const AddBlog = (props) => {
 
               <p id="img-upload">
                 <label htmlFor="img">Upload Image:</label>
-                {/* onChange={uploadImage} */}
                 <input
                   type="file"
                   id="img"
@@ -86,8 +94,29 @@ const AddBlog = (props) => {
                   onChange={uploadImage}
                 />
               </p>
-            </section>
+            </section> */}
 
+            <section className="columns">
+              <p id="img-prev-section">
+                <img
+                  id="img-prev"
+                  src={
+                    inputs.img != null ? URL.createObjectURL(inputs.img) : ""
+                  }
+                  alt=""
+                />
+              </p>
+              <p id="img-upload">
+                <label htmlFor="img">Upload Image:</label>
+                <input
+                  type="file"
+                  id="img"
+                  name="img"
+                  onChange={handleImageChange}
+                  accept="image/*"
+                />
+              </p>
+            </section>
 
             <p>
               <button type="submit">Submit</button>

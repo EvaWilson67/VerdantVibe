@@ -21,19 +21,19 @@ const CarePlant = () => {
     })();
   }, []);
 
-  const openAddDialog = () => {
-    setShowAddDialog(true);
-  };
+  // const openAddDialog = () => {
+  //   setShowAddDialog(true);
+  // };
 
-  const closeAddDialog = () => {
-    console.log("I'm in the close method");
-    setShowAddDialog(false);
-  };
+  // const closeAddDialog = () => {
+  //   console.log("I'm in the close method");
+  //   setShowAddDialog(false);
+  // };
 
   return (
     <>
-    <button id="add-symbol" className="float-right" onClick={openAddDialog}>+</button>
-    {showAddDialog?(<AddCare closeAddDialog={closeAddDialog} />) : ("")}
+    {/* <button id="add-symbol" className="float-right" onClick={openAddDialog}>+</button>
+    {showAddDialog?(<AddCare closeAddDialog={closeAddDialog} />) : ("")} */}
 
       <section className="center">
         {cares.map((care) => (
