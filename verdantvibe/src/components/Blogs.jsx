@@ -35,7 +35,7 @@ const Blogs = () => {
 
   return (
     <>
-    <button id="add-symbol" className="float-right" onClick={openAddDialog}>+</button>
+    <button id="add-symbol" className="float-right" onClick={openAddDialog}>Add A Blog</button>
     {showAddDialog?(<AddBlog closeAddDialog={closeAddDialog} updateBlog={updateBlog} />) : ("")}
       <section id="blog" className="two columns gallery">
         {blogs.map((blog) => (

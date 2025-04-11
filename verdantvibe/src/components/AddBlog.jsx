@@ -31,13 +31,12 @@ const AddBlog = (props) => {
         body: formData,
       }
     );
-    
 
     if (response.status === 200) {
       setResult("Blog added successfully");
       event.target.reset();
       props.closeAddDialog();
-      props.updateBlog(await response.json());      
+      props.updateBlog(await response.json());
     } else {
       console.log("Error adding house", response);
       setResult(response.message);
@@ -60,8 +59,9 @@ const AddBlog = (props) => {
             <h3>Create New Property</h3>
 
             <p>
-              <label htmlFor="name">Enter Date: (mm-dd-yy)</label>
-              <input type="text" id="date" name="date" required min="5"></input>
+              <label htmlFor="date">Enter Date: (mm-dd-yy)</label>
+              <input type="date" id="date" name="date" required />
+
             </p>
 
             <p>
