@@ -56,68 +56,50 @@ const AddBlog = (props) => {
           </span>
           {/* /onSubmit={addToServer} */}
           <form id="add-property-form" onSubmit={addToServer}>
-            <h3>Create New Property</h3>
+            <h3>Create a New Blog</h3>
 
-            <p>
-              <label htmlFor="date">Enter Date: (mm-dd-yy)</label>
-              <input type="date" id="date" name="date" required />
+            <div className="adding-div columns gallery">
+              <section className="image-section">
+                <p>Upload Image</p>
 
-            </p>
+                <p id="img-prev-section">
+                  <img
+                    id="img-prev"
+                    src={
+                      inputs.img != null ? URL.createObjectURL(inputs.img) : ""
+                    }
+                    alt=""
+                  />
+                </p>
+                <p id="img-upload">
+                  {/* <label htmlFor="img">Upload Image:</label> */}
+                  <input
+                    type="file"
+                    id="img"
+                    name="img"
+                    onChange={handleImageChange}
+                    accept="image/*"
+                    required
+                  />
+                </p>
+              </section>
+              <div className="text-div">
+                <p>
+                  <label htmlFor="date">Pick the date:</label>
+                  <input type="date" id="date" name="date" required />
+                </p>
 
-            <p>
-              <label htmlFor="summary">Summary:</label>
-              <input
-                type="text"
-                id="summary"
-                name="summary"
-                required
-                min="3"
-              ></input>
-            </p>
-
-            {/* <section className="columns">
-              <p id="img-prev-section">
-                {prevSrc !== "" ? (
-                  <img id="img-prev" src={prevSrc} alt=""></img>
-                ) : (
-                  ""
-                )}
-              </p>
-
-              <p id="img-upload">
-                <label htmlFor="img">Upload Image:</label>
-                <input
-                  type="file"
-                  id="img"
-                  name="img"
-                  accept="image/*"
-                  onChange={uploadImage}
-                />
-              </p>
-            </section> */}
-
-            <section className="columns">
-              <p id="img-prev-section">
-                <img
-                  id="img-prev"
-                  src={
-                    inputs.img != null ? URL.createObjectURL(inputs.img) : ""
-                  }
-                  alt=""
-                />
-              </p>
-              <p id="img-upload">
-                <label htmlFor="img">Upload Image:</label>
-                <input
-                  type="file"
-                  id="img"
-                  name="img"
-                  onChange={handleImageChange}
-                  accept="image/*"
-                />
-              </p>
-            </section>
-
+                <p className="summary-p">
+                  <p>Summary</p>
+                  <textarea
+                    id="summary"
+                    name="summary"
+                    required
+                    minlength="3"
+                  ></textarea>
+                </p>
+              </div>
+            </div>
             <p>
               <button type="submit">Submit</button>
             </p>

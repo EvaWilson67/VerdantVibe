@@ -14,7 +14,9 @@ const Blogs = () => {
   //after page loaded to asynch json retrieval
   useEffect(() => {
     (async () => {
-      const response = await axios.get("https://verdant-server.onrender.com/api/blog");
+      const response = await axios.get(
+        "https://verdant-server.onrender.com/api/blog"
+      );
       setBlog(response.data);
     })();
   }, []);
@@ -29,14 +31,11 @@ const Blogs = () => {
   };
 
   const updateBlog = (housePlan) => {
-    setBlog((houses)=>[...houses, housePlan]);
-};
-
+    setBlog((houses) => [...houses, housePlan]);
+  };
 
   return (
     <>
-    <button id="add-symbol" className="float-right" onClick={openAddDialog}>Add A Blog</button>
-    {showAddDialog?(<AddBlog closeAddDialog={closeAddDialog} updateBlog={updateBlog} />) : ("")}
       <section id="blog" className="two columns gallery">
         {blogs.map((blog) => (
           <BlogComponent
@@ -46,6 +45,22 @@ const Blogs = () => {
             image={blog.image}
           />
         ))}
+      </section>
+      <section className="center">
+        <div class="semi-circle"></div>
+
+        <div className=" button-information">
+          <h2>Want to add a Blog?</h2>
+          <button id="add-button" onClick={openAddDialog}>
+            Add A Blog
+          </button>
+          <p>DO IT!!!</p>
+          {showAddDialog ? (
+            <AddBlog closeAddDialog={closeAddDialog} updateBlog={updateBlog} />
+          ) : (
+            ""
+          )}
+        </div>
       </section>
     </>
   );
