@@ -74,15 +74,15 @@ function BlogComponent(props) {
             </section>
             <div className="columns">
               <img
-                src={"https://verdant-server.onrender.com/images/blog_images/" + props.image}
-                alt={props.date}
+                src={"https://verdant-server.onrender.com/images/blog_images/" + blog.image}
+                alt={blog.date}
               />
               <div className="height-center">
-                <h3>{props.date}</h3>
+                <h3>{blog.date}</h3>
               </div>
             </div>
 
-            <p>{props.description}</p>
+            <p>{blog.description}</p>
           </div>
         </section>
       ) : (

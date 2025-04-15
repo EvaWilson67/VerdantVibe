@@ -17,7 +17,7 @@ const EditBlog = (props) => {
     console.log(...formData);
 
     const response = await fetch(
-      `https://verdant-server.onrender.com/api/blogs/${props._id}`,
+      `http://localhost:3001/api/blogs/${props._id}`,
       {
         method: "PUT",
         body: formData,
