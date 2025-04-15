@@ -1,23 +1,15 @@
-import "./css/BlogComponent.css";
-
 import "./css/Dialog.css";
-
 import React, { useState } from "react";
 
-const AddBlog = (props) => {
+const EditBlog = (props) => {
   const [result, setResult] = useState("");
   const [prevSrc, setPrevSrc] = useState("");
-  const [inputs, setInputs] = useState({});
 
-  const handleImageChange = (event) => {
-    const name = event.target.name;
-    const value = event.target.files[0];
-    setInputs((values) => ({ ...values, [name]: value }));
+  const uploadImage = (event) => {
+    setPrevSrc(URL.createObjectURL(event.target.files[0]));
   };
 
-  //"https://verdant-server.onrender.com/api/blogs"
-  //"http://localhost:3001/api/blogs"
-  const addToServer = async (event) => {
+  const onSubmit = async (event) => {
     event.preventDefault();
     setResult("Sending...");
 
@@ -25,61 +17,49 @@ const AddBlog = (props) => {
     console.log(...formData);
 
     const response = await fetch(
-      "https://verdant-server.onrender.com/api/blogs",
+      `https://verdant-server.onrender.com/api/blogs/${props._id}`,
       {
-        method: "POST",
+        method: "PUT",
         body: formData,
       }
     );
 
     if (response.status === 200) {
-      setResult("Blog added successfully");
+      setResult("Blog editted successfully");
       event.target.reset();
-      props.closeAddDialog();
-      props.updateBlog(await response.json());
+      props.closeEditDialog();
+      props.editBlog(await response.json());
     } else {
-      console.log("Error adding house", response);
-      setResult(response.message);
+      setResult("Error editting your blog");
     }
   };
 
   return (
-    <div id="add-dialog" className="w3-modal">
+    <div id="edit-dialog" className="w3-modal">
       <div className="w3-modal-content">
         <div className="w3-container">
           <span
             id="dialog-close"
             className="w3-button w3-display-topright"
-            onClick={props.closeAddDialog}
+            onClick={props.closeEditDialog}
           >
             &times;
           </span>
-          {/* /onSubmit={addToServer} */}
-          <form id="add-property-form" onSubmit={addToServer}>
-            <h3>Create a New Blog</h3>
-
-            <div className="adding-div columns gallery">
+          <form id="edit-property-form" onSubmit={onSubmit}>
+            <h3>Edit An Existing Blog</h3>
+            <div className="div-forms columns gallery">
               <section className="image-section">
                 <p>Upload Image</p>
-
                 <p id="img-prev-section">
-                  <img
-                    id="img-prev"
-                    src={
-                      inputs.img != null ? URL.createObjectURL(inputs.img) : ""
-                    }
-                    alt=""
-                  />
+                  {prevSrc !== "" ? <img id="img-prev" src={prevSrc}></img> : ""}
                 </p>
                 <p id="img-upload">
-                  {/* <label htmlFor="img">Upload Image:</label> */}
                   <input
                     type="file"
                     id="img"
                     name="img"
-                    onChange={handleImageChange}
                     accept="image/*"
-                    required
+                    onChange={uploadImage}
                   />
                 </p>
               </section>
@@ -111,4 +91,4 @@ const AddBlog = (props) => {
   );
 };
 
-export default AddBlog;
+export default EditBlog;

@@ -3,7 +3,6 @@ import { useState, useEffect } from "react";
 import { Outlet, Link } from "react-router-dom";
 
 import PlantCare from "./PlantCare";
-import AddCare from "./AddCare";
 
 const CarePlant = () => {
   const [cares, setCare] = useState([]);
