@@ -30,8 +30,11 @@ function BlogComponent(props) {
   const hideBlog = () => {
     setShowBlog(false);
   };
-  const editBlog = (blog) => {
-    setBlog(blog);
+  const editBlog = (blogEdit) => {
+    //console.log(blogEdit);
+    setBlog(blogEdit);
+    console.log("I was just updated " + blog.summary);
+    console.log(blog);
   };
 
   return (
@@ -54,9 +57,9 @@ function BlogComponent(props) {
               <EditBlog
                 _id={blog._id}
                 date={blog.date}
-                description={blog.description}
+                description={blog.summary}
                 closeEditDialog={closeEditDialog}
-                editBlog = {editBlog}
+                editBlog={editBlog}
               />
             ) : (
               ""
@@ -74,7 +77,10 @@ function BlogComponent(props) {
             </section>
             <div className="columns">
               <img
-                src={"https://verdant-server.onrender.com/images/blog_images/" + blog.image}
+                src={
+                  "https://verdant-server.onrender.com/images/blog_images/" +
+                  blog.image
+                }
                 alt={blog.date}
               />
               <div className="height-center">
@@ -82,7 +88,8 @@ function BlogComponent(props) {
               </div>
             </div>
 
-            <p>{blog.description}</p>
+            <p>{blog.summary}</p>
+            {/* <h3>{blog._id}</h3> */}
           </div>
         </section>
       ) : (

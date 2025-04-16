@@ -1,5 +1,13 @@
 import "./css/Dialog.css";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+
+const formatDateForInput = (dateStr) => {
+  const date = new Date(dateStr);
+  const yyyy = date.getFullYear();
+  const mm = String(date.getMonth() + 1).padStart(2, "0");
+  const dd = String(date.getDate()).padStart(2, "0");
+  return `${yyyy}-${mm}-${dd}`;
+};
 
 const EditBlog = (props) => {
   const [result, setResult] = useState("");
@@ -17,7 +25,7 @@ const EditBlog = (props) => {
     console.log(...formData);
 
     const response = await fetch(
-      `http://localhost:3001/api/blogs/${props._id}`,
+      `https://verdant-server.onrender.com/api/blogs/${props._id}`,
       {
         method: "PUT",
         body: formData,
@@ -25,12 +33,16 @@ const EditBlog = (props) => {
     );
 
     if (response.status === 200) {
-      setResult("Blog editted successfully");
+      setResult("House Plan editted successfully");
       event.target.reset();
+
+      const tempInfo = await response.json();
+      props.editBlog(tempInfo);
+      // console.log(tempInfo);
+
       props.closeEditDialog();
-      props.editBlog(await response.json());
     } else {
-      setResult("Error editting your blog");
+      setResult("Error editting your house plan");
     }
   };
 
@@ -51,7 +63,7 @@ const EditBlog = (props) => {
               <section className="image-section">
                 <p>Upload Image</p>
                 <p id="img-prev-section">
-                  {prevSrc !== "" ? <img id="img-prev" src={prevSrc}></img> : ""}
+                  {prevSrc != "" ? <img id="img-prev" src={prevSrc}></img> : ""}
                 </p>
                 <p id="img-upload">
                   <input
@@ -66,7 +78,13 @@ const EditBlog = (props) => {
               <div className="text-div">
                 <p>
                   <label htmlFor="date">Pick the date:</label>
-                  <input type="date" id="date" name="date" required />
+                  <input
+                    type="date"
+                    id="date"
+                    name="date"
+                    defaultValue={formatDateForInput(props.date)}
+                    required
+                  />
                 </p>
 
                 <div className="summary-p">
@@ -75,8 +93,10 @@ const EditBlog = (props) => {
                     id="summary"
                     name="summary"
                     required
+                    defaultValue={props.description}
                     minLength="3"
                   ></textarea>
+
                 </div>
               </div>
             </div>

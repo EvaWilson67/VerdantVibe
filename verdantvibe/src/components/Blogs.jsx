@@ -16,7 +16,7 @@ const Blogs = () => {
   //after page loaded to asynch json retrieval
   useEffect(() => {
     (async () => {
-      const response = await axios.get("http://localhost:3001/api/blogs");
+      const response = await axios.get("https://verdant-server.onrender.com/api/blogs");
       setBlog(response.data);
     })();
   }, []);
@@ -30,8 +30,8 @@ const Blogs = () => {
     setShowAddDialog(false);
   };
 
-  const updateBlog = (housePlan) => {
-    setBlog((houses) => [...houses, housePlan]);
+  const updateBlog = (blog) => {
+    setBlog((blogs) => [...blogs, blog]);
   };
   
 
@@ -40,9 +40,9 @@ const Blogs = () => {
       <section id="blog" className="two columns gallery">
         {blogs.map((blog) => (
           <BlogComponent
-            _id={blog.id}
+            _id={blog._id}
             date={blog.date}
-            description={blog.summary}
+            summary={blog.summary}
             image={blog.image}
           />
         ))}

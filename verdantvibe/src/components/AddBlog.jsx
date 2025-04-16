@@ -54,7 +54,6 @@ const AddBlog = (props) => {
           >
             &times;
           </span>
-          {/* /onSubmit={addToServer} */}
           <form id="add-property-form" onSubmit={addToServer}>
             <h3>Create a New Blog</h3>
 
@@ -72,7 +71,6 @@ const AddBlog = (props) => {
                   />
                 </p>
                 <p id="img-upload">
-                  {/* <label htmlFor="img">Upload Image:</label> */}
                   <input
                     type="file"
                     id="img"
