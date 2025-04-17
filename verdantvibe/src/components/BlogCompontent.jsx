@@ -33,8 +33,9 @@ function BlogComponent(props) {
   const editBlog = (blogEdit) => {
     //console.log(blogEdit);
     setBlog(blogEdit);
-    console.log("I was just updated " + blog.summary);
-    console.log(blog);
+
+    // console.log("I was just updated " + blog.summary);
+    // console.log(blog);
   };
 
   return (
@@ -58,6 +59,7 @@ function BlogComponent(props) {
                 _id={blog._id}
                 date={blog.date}
                 description={blog.summary}
+                image={blog.image}
                 closeEditDialog={closeEditDialog}
                 editBlog={editBlog}
               />

@@ -12,6 +12,13 @@ const formatDateForInput = (dateStr) => {
 const EditBlog = (props) => {
   const [result, setResult] = useState("");
   const [prevSrc, setPrevSrc] = useState("");
+  const [inputs, setInputs] = useState({});
+
+  const handleImageChange = (event) => {
+    const name = event.target.name;
+    const value = event.target.files[0];
+    setInputs((values) => ({ ...values, [name]: value }));
+  };
 
   const uploadImage = (event) => {
     setPrevSrc(URL.createObjectURL(event.target.files[0]));
@@ -39,6 +46,7 @@ const EditBlog = (props) => {
       const tempInfo = await response.json();
       props.editBlog(tempInfo);
       // console.log(tempInfo);
+      // console.log('Image prop:', props.image);
 
       props.closeEditDialog();
     } else {
@@ -63,15 +71,22 @@ const EditBlog = (props) => {
               <section className="image-section">
                 <p>Upload Image</p>
                 <p id="img-prev-section">
-                  {prevSrc != "" ? <img id="img-prev" src={prevSrc}></img> : ""}
+                  <img
+                    id="img-prev"
+                    src={
+                      inputs.img != null ? URL.createObjectURL(inputs.img) : `https://verdant-server.onrender.com/images/blog_images/${props.image}`
+                    }
+                    alt=""
+                  />
                 </p>
                 <p id="img-upload">
                   <input
                     type="file"
                     id="img"
                     name="img"
+                    onChange={handleImageChange}
                     accept="image/*"
-                    onChange={uploadImage}
+                    required
                   />
                 </p>
               </section>
@@ -96,7 +111,6 @@ const EditBlog = (props) => {
                     defaultValue={props.description}
                     minLength="3"
                   ></textarea>
-
                 </div>
               </div>
             </div>
