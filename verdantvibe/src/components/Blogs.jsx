@@ -1,9 +1,13 @@
+import "./css/Blogs.css";
+
+
 import axios from "axios";
 import { useState, useEffect } from "react";
 import { Outlet, Link } from "react-router-dom";
 
 import BlogComponent from "./BlogCompontent";
 import AddBlog from "./AddBlog";
+
 
 
 // /"https://verdant-server.onrender.com/api/blogs"
@@ -47,7 +51,7 @@ const Blogs = () => {
           />
         ))}
       </section>
-      <section className="center">
+      <section className="add-section center">
         <div className="semi-circle"></div>
 
         <div className=" button-information">
