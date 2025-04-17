@@ -17,7 +17,7 @@ const DeleteBlog = (props) => {
       props.closeDeleteDialog();
       props.hideBlog();
     } else {
-      setResult("Sorry, we couldn't delete your house righ now");
+      setResult("Sorry, we couldn't delete your blog right now");
     }
   };
 

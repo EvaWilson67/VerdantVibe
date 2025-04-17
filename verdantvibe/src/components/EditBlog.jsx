@@ -40,7 +40,7 @@ const EditBlog = (props) => {
     );
 
     if (response.status === 200) {
-      setResult("House Plan editted successfully");
+      setResult("Blog editted successfully");
       event.target.reset();
 
       const tempInfo = await response.json();
@@ -50,7 +50,7 @@ const EditBlog = (props) => {
 
       props.closeEditDialog();
     } else {
-      setResult("Error editting your house plan");
+      setResult("Error editting your blog");
     }
   };
 

@@ -38,7 +38,7 @@ const AddBlog = (props) => {
       props.closeAddDialog();
       props.updateBlog(await response.json());
     } else {
-      console.log("Error adding house", response);
+      console.log("Error adding blog", response);
       setResult(response.message);
     }
   };
