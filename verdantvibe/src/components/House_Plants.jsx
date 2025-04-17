@@ -26,10 +26,10 @@ const HousePlants = () => {
         <div className="house-plants-information">
           {easyPlants.map((plant) => (
             <HousePlant
-              _id="1"
+              _id={plant._id}
               name={plant.name}
               url={plant.link}
-              description={plant.summary}
+              summary={plant.summary}
               image={plant.image}
               difficulty={plant.section}
             />
@@ -41,10 +41,10 @@ const HousePlants = () => {
         <div className="house-plants-information">
           {mediumPlants.map((plant) => (
             <HousePlant
-              _id="1"
+              _id={plant._id}
               name={plant.name}
               url={plant.link}
-              description={plant.summary}
+              summary={plant.summary}
               image={plant.image}
               difficulty={plant.section}
             />
@@ -56,10 +56,10 @@ const HousePlants = () => {
         <div className="house-plants-information">
           {hardPlants.map((plant) => (
             <HousePlant
-              _id="1"
+              _id={plant._id}
               name={plant.name}
               url={plant.link}
-              description={plant.summary}
+              summary={plant.summary}
               image={plant.image}
               difficulty={plant.section}
             />

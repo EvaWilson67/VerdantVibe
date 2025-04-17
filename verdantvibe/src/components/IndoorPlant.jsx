@@ -13,7 +13,7 @@ function IndoorPlant(props) {
             <div className="image-text fragments">
                 <h3>Description</h3>
                 <p>
-                    {props.description}
+                    {props.summary}
                 </p>
             </div>
             

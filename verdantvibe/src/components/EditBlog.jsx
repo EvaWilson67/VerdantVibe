@@ -86,7 +86,6 @@ const EditBlog = (props) => {
                     name="img"
                     onChange={handleImageChange}
                     accept="image/*"
-                    required
                   />
                 </p>
               </section>

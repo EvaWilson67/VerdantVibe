@@ -27,11 +27,11 @@ const GardenPlants = () => {
         <div className="columns three gallery">
         {vegetable.map((plant) => (
           <Garden
-            _id="1"
+            _id={plant._id}
             image={plant.image}
             name={plant.name}
             url={plant.link}
-            description={plant.summary}
+            summary={plant.summary}
             type={plant.type}
           />
         ))}
@@ -42,11 +42,11 @@ const GardenPlants = () => {
         <div className="columns three gallery">
         {fruit.map((plant) => (
           <Garden
-            _id="1"
+            _id={plant._id}
             image={plant.image}
             name={plant.name}
             url={plant.link}
-            description={plant.summary}
+            summary={plant.summary}
             type={plant.type}
           />
         ))}
@@ -57,11 +57,11 @@ const GardenPlants = () => {
         <div className="columns three gallery">
         {herb.map((plant) => (
           <Garden
-            _id="1"
+            _id={plant._id}
             image={plant.image}
             name={plant.name}
             url={plant.link}
-            description={plant.summary}
+            summary={plant.summary}
             type={plant.type}
           />
         ))}
@@ -72,11 +72,11 @@ const GardenPlants = () => {
         <div className="columns three gallery">
         {flower.map((plant) => (
           <Garden
-            _id="1"
+            _id={plant._id}
             image={plant.image}
             name={plant.name}
             url={plant.link}
-            description={plant.summary}
+            summary={plant.summary}
             type={plant.type}
           />
         ))}

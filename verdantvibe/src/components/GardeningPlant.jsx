@@ -9,7 +9,7 @@ function GardeningPlant(props) {
             <div className=" fragments">
                 <h3>Origin</h3>
                 <p>
-                    {props.description}
+                    {props.summary}
                 </p>
             </div>
            

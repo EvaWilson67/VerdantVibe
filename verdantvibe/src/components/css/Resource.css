@@ -33,6 +33,18 @@
     border: 5px solid var(--container-border-color);
     width: 30%;
   }
+
+  .unit-content{
+    min-height:100px;
+  }
+
+  .unit-content h3{
+    font-size: larger;
+  }
+
+  .unit-content p{
+    margin:10px;
+  }
    /* .unit{
     width: 30%;
 

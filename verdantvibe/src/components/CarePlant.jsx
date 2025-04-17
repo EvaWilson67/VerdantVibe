@@ -37,11 +37,11 @@ const CarePlant = () => {
       <section className="center">
         {cares.map((care) => (
           <PlantCare
-            _id="1"
+            _id={care._id}
             imageFirst={care.imageFirst}
             image={care.image}
             name={care.name}
-            description={care.summary}
+            summary={care.summary}
           />
         ))}
       </section>

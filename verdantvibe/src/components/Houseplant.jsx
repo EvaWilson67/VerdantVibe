@@ -10,9 +10,9 @@ function HousePlant(props) {
           <div className="height-center">
             <img src={"https://verdant-server.onrender.com/images/house_images/" + props.image} alt={props.name} />
           </div>
-          <div>
+          <div class="div-information">
             <h3>{props.name}</h3>
-            <p>{props.description}</p>
+            <p>{props.summary}</p>
           </div>
         </section>
       </Link>

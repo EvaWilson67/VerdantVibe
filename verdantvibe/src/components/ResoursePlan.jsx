@@ -23,7 +23,7 @@ const ResourcePlan = () => {
         <Resource
           _id="1"
           name={resource.name}
-          description={resource.summary}
+          summary={resource.summary}
           image={resource.image}
           url={resource.url}
           type={resource.type}

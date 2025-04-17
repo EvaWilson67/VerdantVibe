@@ -13,14 +13,14 @@ function PlantCare(props) {
           </div>
           <div>
             <h3>{props.name}</h3>
-            <p>{props.description}</p>
+            <p>{props.summary}</p>
           </div>
         </>
       ) : (
         <>
           <div>
             <h3>{props.name}</h3>
-            <p>{props.description}</p>
+            <p>{props.summary}</p>
           </div>
           <div className="idea-img">
             <img src={"https://verdant-server.onrender.com/images/care_images/" + props.image} alt={props.name} />

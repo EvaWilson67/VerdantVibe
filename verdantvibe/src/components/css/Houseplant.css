@@ -29,4 +29,9 @@
       .segment p {
         padding: 5px;
       }
+
+
+      .div-information{
+        min-height: 350px;
+      }
 }
