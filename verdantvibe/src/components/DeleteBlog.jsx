@@ -1,6 +1,8 @@
 import "./css/Dialog.css";
 import React, { useState } from "react";
 
+//https://verdant-server.onrender.com/api/blogs/${props._id}
+//http://localhost:3001/api/blogs
 const DeleteBlog = (props) => {
   const [result, setResult] = useState("");
 
